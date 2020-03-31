@@ -6,7 +6,7 @@ import 'userregisteration.dart';
 import 'Screen1.dart';
 import 'userpage.dart';
 import 'viewprofile.dart';
-
+import 'SplashScreen.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/zero',
+      initialRoute: '/',
       routes: {
-
+        '/' : (context) => SplashScreen(),
         '/zero' : (context) => App(),
         '/first' : (context) => Screen1(),
         '/second' : (context) => UserForm(),

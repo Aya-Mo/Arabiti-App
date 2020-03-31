@@ -278,11 +278,11 @@ class _CardsState extends State<Cards> {
           children: <Widget>[
             FlatButton(
               child: Text('Accept'),
-              onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
+              onPressed: (){  Navigator.pushNamed(btn1,'/fifth');},
             ),
             FlatButton(
               child: Text('refuse'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/sixth');},
+              onPressed: (){ Navigator.pushNamed(btn2, '/fifth');},
             ),
           ],
         ),
