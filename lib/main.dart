@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/cards.dart';
-import 'package:untitled/screen0.dart';
-import 'package:untitled/supplierform.dart';
+import 'cards.dart';
+import 'loginPage.dart';
+import 'supplierform.dart';
 import 'userregisteration.dart';
-import 'Screen1.dart';
+import 'thebuttons.dart';
 import 'userpage.dart';
 import 'viewprofile.dart';
 import 'SplashScreen.dart';
+import 'bookingForm.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/fourth' : (context) => SupplierForm(),
         '/fifth' : (context) => Cards(),
         '/sixth' : (context) => ViewProfile(),
+        '/seventh' : (context) => BookingForm(),
       }
     );
   }

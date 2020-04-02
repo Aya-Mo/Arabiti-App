@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'FadeAnimation.dart';
-import 'screen0.dart';
+import 'loginPage.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -112,21 +112,21 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
               )),
             ),
             Positioned(
-              top: 100,
-              left: 0,
+              top: 390,
+              left: -5,
               child: FadeAnimation(1.3, Container(
                 width: width,
                 height: 400,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/one.jpeg'),
+                        image: AssetImage('assets/images/brand.jpeg'),
                         fit: BoxFit.cover
                     )
                 ),
               )),
             ),
             Positioned(
-              top: 150,
+              top: 20,
               left: 0,
               child: FadeAnimation(1.6, Container(
                 width: width,

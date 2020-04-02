@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage>{
                   style: TextStyle(
                       fontSize: 32.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.blue[900],
+                      color: Color(0xFF0D47A1),
                       fontFamily: "Ubuntu"
                   ),
                 ),
@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage>{
                       Text(
                         "Forgot Password?",
                         style: TextStyle(
-                          color: Colors.blue[900],
+                            color: Color(0xFF0D47A1),
                             fontFamily: "Ubuntu"
                         ),
                       ),
@@ -89,7 +89,7 @@ class _LoginPageState extends State<LoginPage>{
                           },
                         child:Text("SIGN UP",
                             style:TextStyle(
-                              color: Colors.blue[900],
+                                color: Color(0xFF0D47A1),
                                 fontFamily: "Ubuntu"
                             ),
                         ),
@@ -136,7 +136,7 @@ class _LoginPageState extends State<LoginPage>{
         borderRadius: BorderRadius.circular(23.0),
         gradient: LinearGradient(
             colors: [
-              Colors.blue[900],
+             Color(0xFF0D47A1),
               Colors.blue[800]
             ],
             begin: Alignment.centerRight,

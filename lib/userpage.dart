@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:dio/dio.dart';
+import 'package:meta/meta.dart';
+
 class UserPage extends StatefulWidget {
   @override
   _UserPageState createState() => _UserPageState();
@@ -190,6 +192,7 @@ class Page extends StatelessWidget {
     );
   }
 }
+
 class TabBarDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -221,7 +224,9 @@ class TabBarDemo extends StatelessWidget {
 
   }
 }
-  Widget myDetailsContainer1(btn1,btn2) {
+
+  Widget myDetailsContainer1(btn1,btn2,onpressed1,onpressed2) {
+  myDetailsContainer1(@required function onpressed1,@required function onpressed2);
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -261,13 +266,13 @@ class TabBarDemo extends StatelessWidget {
           style: TextStyle(color: Colors.black54, fontSize: 18.0,fontWeight: FontWeight.bold),)),
         Row(
           children: <Widget>[
-            FlatButton(
+            RaisedButton(
               child: Text('view profile'),
-              onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
+              onPressed: onpressed1,
             ),
-            FlatButton(
+            RaisedButton(
               child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/sixth');},
+              onPressed:onpressed2,
             ),
           ],
         ),
@@ -275,7 +280,8 @@ class TabBarDemo extends StatelessWidget {
     );
   }
 
-  Widget myDetailsContainer2(btn1,btn2) {
+  Widget myDetailsContainer2(btn1,btn2,onpressed1,onpressed2) {
+    myDetailsContainer2(@required function onpressed1,@required function onpressed2);
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -308,16 +314,13 @@ class TabBarDemo extends StatelessWidget {
           style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
         Row(
           children: <Widget>[
-            FlatButton(
-              hoverColor: Colors.grey,
-              shape: CircleBorder(),
+            RaisedButton(
               child: Text('view profile'),
               onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
             ),
-            FlatButton(
-              shape: CircleBorder(),
+            RaisedButton(
               child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/sixth');},
+              onPressed: (){ Navigator.pushNamed(btn2, '/seventh');},
             ),
           ],
         ),
@@ -325,7 +328,8 @@ class TabBarDemo extends StatelessWidget {
     );
   }
 
-  Widget myDetailsContainer3(btn1,btn2) {
+  Widget myDetailsContainer3(btn1,btn2,onpressed1,onpressed2) {
+    myDetailsContainer3(@required function onpressed1,@required function onpressed2);
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -355,13 +359,13 @@ class TabBarDemo extends StatelessWidget {
           style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
         Row(
           children: <Widget>[
-            FlatButton(
+            RaisedButton(
               child: Text('view profile'),
               onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
             ),
-            FlatButton(
+            RaisedButton(
               child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/sixth');},
+              onPressed: (){ Navigator.pushNamed(btn2, '/seventh');},
             ),
           ],
         ),
@@ -369,7 +373,8 @@ class TabBarDemo extends StatelessWidget {
     );
   }
 
-  Widget myDetailsContainer4(btn1,btn2) {
+  Widget myDetailsContainer4(btn1,btn2,onpressed1,onpressed2) {
+    myDetailsContainer4(@required function onpressed1,@required function onpressed2);
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -400,13 +405,13 @@ class TabBarDemo extends StatelessWidget {
           style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
         Row(
           children: <Widget>[
-            FlatButton(
+            RaisedButton(
               child: Text('view profile'),
               onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
             ),
-            FlatButton(
+            RaisedButton(
               child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/sixth');},
+              onPressed: (){ Navigator.pushNamed(btn2, '/seventh');},
             ),
           ],
         ),
@@ -447,7 +452,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer1(this.context ,this.context),
+                          child: myDetailsContainer1(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -480,7 +485,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer2(this.context ,this.context),
+                          child: myDetailsContainer2(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -513,7 +518,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer3(this.context ,this.context),
+                          child: myDetailsContainer3(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -546,7 +551,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer4(this.context ,this.context),
+                          child: myDetailsContainer4(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -602,7 +607,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer1(this.context ,this.context),
+                          child: myDetailsContainer1(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -635,7 +640,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer2(this.context ,this.context),
+                          child: myDetailsContainer2(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -668,7 +673,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer3(this.context ,this.context),
+                          child: myDetailsContainer3(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(
@@ -701,7 +706,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer4(this.context ,this.context),
+                          child: myDetailsContainer4(this.context ,this.context,(){ Navigator.pushNamed(context, '/sixth');}, (){ Navigator.pushNamed(context, '/seventh');},),
                         ),
                       ),
                       Container(

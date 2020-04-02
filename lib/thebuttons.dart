@@ -12,7 +12,7 @@ class _Screen1State extends State<Screen1> {
     final userButon = Material(
         elevation: 5.0,
         borderRadius: BorderRadius.circular(70.0),
-        color: Colors.blue[800],
+        color: Color(0xFF0D47A1),
         child: MaterialButton(
           minWidth:270 ,
           padding: EdgeInsets.fromLTRB(20.0, 25.0, 40.0, 25.0),
@@ -27,7 +27,7 @@ class _Screen1State extends State<Screen1> {
     final cleanerButon = Material(
         elevation: 5.0,
         borderRadius: BorderRadius.circular(70.0),
-        color: Colors.blue[800],
+        color: Color(0xFF0D47A1),
         child: MaterialButton(
           minWidth:270 ,
           padding: EdgeInsets.fromLTRB(20.0, 25.0, 20.0, 25.0),
@@ -42,7 +42,7 @@ class _Screen1State extends State<Screen1> {
     final mechanicButon = Material(
         elevation: 5.0,
         borderRadius: BorderRadius.circular(70.0),
-        color: Colors.blue[800],
+        color: Color(0xFF0D47A1),
         child: MaterialButton(
           minWidth:270 ,
           padding: EdgeInsets.fromLTRB(20.0, 25.0, 20.0, 25.0),
@@ -60,15 +60,15 @@ class _Screen1State extends State<Screen1> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: Colors.white,
-          body: SafeArea(
-              child: Center(
-                child: Container(
-                   /* decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/prologo.jpg"), // <-- BACKGROUND IMAGE
-                    fit: BoxFit.fill,
-                  ),
-                ),*/
+          body:  Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/blackcar.jpeg"), // <-- BACKGROUND IMAGE
+                fit: BoxFit.cover,
+              ),
+            ),
+              child:SafeArea(
+                child:Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
