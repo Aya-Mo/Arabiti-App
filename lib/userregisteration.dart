@@ -5,7 +5,7 @@ class UserForm extends StatefulWidget {
 }
 
 class _UserFormState extends State<UserForm> {
-  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
+  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0,color: Colors.white);
   bool _isHidden = true;
 
   void _toggleVisibility(){
@@ -20,8 +20,8 @@ class _UserFormState extends State<UserForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "your name",
-          prefixIcon: Icon(Icons.person_pin),
+          hintText: "your name",hintStyle:style ,
+          prefixIcon: Icon(Icons.person_pin,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -30,8 +30,8 @@ class _UserFormState extends State<UserForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "phone",
-          prefixIcon: Icon(Icons.phone),
+          hintText: "phone",hintStyle:style ,
+          prefixIcon: Icon(Icons.phone,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -40,8 +40,8 @@ class _UserFormState extends State<UserForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Email",
-          prefixIcon:Icon(Icons.email),
+          hintText: "Email",hintStyle:style ,
+          prefixIcon:Icon(Icons.email,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -49,8 +49,8 @@ class _UserFormState extends State<UserForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Password",
-          prefixIcon: Icon(Icons.lock),
+          hintText: "Password",hintStyle:style ,
+          prefixIcon: Icon(Icons.lock,color: Colors.white,),
           suffixIcon: IconButton(
             onPressed: _toggleVisibility,
             icon: _isHidden ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
@@ -81,10 +81,9 @@ class _UserFormState extends State<UserForm> {
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/blackcar.jpeg"), // <-- BACKGROUND IMAGE
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
             ),
           ),
-          color: Colors.white,
           child: Padding(
             padding: const EdgeInsets.all(36.0),
             child: Column(

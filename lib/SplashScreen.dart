@@ -112,21 +112,21 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
               )),
             ),
             Positioned(
-              top: 390,
+              top: 90,
               left: -5,
               child: FadeAnimation(1.3, Container(
                 width: width,
                 height: 400,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/brand.jpeg'),
+                        image: AssetImage('assets/images/one.jpeg'),
                         fit: BoxFit.cover
                     )
                 ),
               )),
             ),
             Positioned(
-              top: 20,
+              top: 100,
               left: 0,
               child: FadeAnimation(1.6, Container(
                 width: width,

@@ -5,7 +5,7 @@ class SupplierForm extends StatefulWidget {
 }
 
 class _SupplierFormState extends State<SupplierForm> {
-  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
+  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0,color: Colors.white);
   bool _isHidden = true;
 
   void _toggleVisibility(){
@@ -21,8 +21,8 @@ class _SupplierFormState extends State<SupplierForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "your name",
-          prefixIcon: Icon(Icons.person_pin),
+          hintText: "your name",hintStyle:style ,
+          prefixIcon: Icon(Icons.person_pin,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -31,8 +31,8 @@ class _SupplierFormState extends State<SupplierForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "phone",
-          prefixIcon: Icon(Icons.phone),
+          hintText: "phone",hintStyle:style ,
+          prefixIcon: Icon(Icons.phone,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -41,8 +41,8 @@ class _SupplierFormState extends State<SupplierForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Email",
-          prefixIcon: Icon(Icons.email),
+          hintText: "Email",hintStyle:style ,
+          prefixIcon: Icon(Icons.email,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -50,8 +50,8 @@ class _SupplierFormState extends State<SupplierForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Password",
-          prefixIcon: Icon(Icons.lock),
+          hintText: "Password",hintStyle:style ,
+          prefixIcon: Icon(Icons.lock,color: Colors.white,),
         suffixIcon: IconButton(
           onPressed: _toggleVisibility,
         icon: _isHidden ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
@@ -65,8 +65,8 @@ class _SupplierFormState extends State<SupplierForm> {
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "your address",
-          prefixIcon: Icon(Icons.location_on),
+          hintText: "your address",hintStyle:style ,
+          prefixIcon: Icon(Icons.location_on,color: Colors.white,),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -82,13 +82,20 @@ class _SupplierFormState extends State<SupplierForm> {
         },
         child: Text("sign in",
             textAlign: TextAlign.center,
-            style: style.copyWith(
-                color: Colors.white, fontWeight: FontWeight.bold)),
+            style: style.copyWith(fontWeight: FontWeight.bold)),
       ),
     );
     return Scaffold(
-        body:ListView(
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/blackcar.jpeg"), // <-- BACKGROUND IMAGE
+              fit: BoxFit.fill,
+            ),
+          ),
+        child:ListView(
           children :<Widget>[
+
              Padding(
               padding: const EdgeInsets.all(36.0),
               child: Column(
@@ -115,7 +122,7 @@ class _SupplierFormState extends State<SupplierForm> {
                 ],
               ),
           ),
-    ],  ),
+    ],  ),),
     );
   }
 }
