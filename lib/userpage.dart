@@ -73,7 +73,7 @@ class _UserPageState extends State<UserPage> {
                   trailing: new Icon(Icons.account_circle),
                   onTap: () {
                     Navigator.of(context).pop();
-                    Navigator.pushNamed(context, '/sixth');
+                    Navigator.pushNamed(context, '/myprofile');
                   }),
               new ListTile(
                   title: new Text(
@@ -194,11 +194,7 @@ class Page extends StatelessWidget {
 class TabBarDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: /*DefaultTabController(
-        length: 2,
-        child:*/ Scaffold(
+    return  Scaffold(
          /* appBar:  AppBar(
             title: Text('\t \t \t \t choose service provider',),
             bottom: TabBar(
@@ -216,19 +212,25 @@ class TabBarDemo extends StatelessWidget {
                 page2(),
           ],
         ),
-      ),
+
     //),
     );
 
   }
 }
-  Widget myDetailsContainer1(btn1,btn2) {
-  return Column(
+class ContainerDetails extends StatelessWidget {
+  String text;
+  String address;
+  double rate;
+  ContainerDetails(this.text,this.address,this.rate);
+  @override
+  Widget build(BuildContext context) {
+    return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Text("Ahmed",
+          child: Container(child: Text(text,
             style: TextStyle(color: Colors.blue, fontSize: 24.0,fontWeight: FontWeight.bold),)),
         ),
         Padding(
@@ -237,7 +239,7 @@ class TabBarDemo extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Container(child: Text("4.3",
+                  Container(child: Text(rate.toString(),
                     style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
                   Container(child: Icon(
                     FontAwesomeIcons.solidStar, color: Colors.amber,
@@ -258,161 +260,26 @@ class TabBarDemo extends StatelessWidget {
                     style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
                 ],)),
         ),
-        Container(child: Text("nasr city \u00B7 abdalla elaraby street",
+        Container(child: Text(address,
           style: TextStyle(color: Colors.black54, fontSize: 18.0,fontWeight: FontWeight.bold),)),
         Row(
           children: <Widget>[
             RaisedButton(
               child: Text('view profile'),
-              onPressed:(){},
-            ),
+              onPressed:(){
+                Navigator.pushNamed(context, '/sixth');},),
             RaisedButton(
               child: Text('Booking'),
-              onPressed:(){},
+              onPressed:(){
+                Navigator.pushNamed(context, '/seventh');
+              },
             ),
           ],
         ),
       ],
     );
   }
-
-  Widget myDetailsContainer2(btn1,btn2) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Text("Mostafa",
-            style: TextStyle(color: Colors.blue, fontSize: 24.0,fontWeight: FontWeight.bold),)),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Row(children: <Widget>[
-            Container(child: Text("4.3",
-              style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStarHalf, color: Colors.amber,
-              size: 15.0,),),
-            Container(child: Text("(75) \u00B7 1.2 mi",
-              style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-          ],)),
-        ),
-        Container(child: Text("nasr city \u00B7 abdalla elaraby street",
-          style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-        Row(
-          children: <Widget>[
-            RaisedButton(
-              child: Text('view profile'),
-              onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
-            ),
-            RaisedButton(
-              child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/seventh');},
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-
-  Widget myDetailsContainer3(btn1,btn2) {
-
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Text("Amr",
-            style: TextStyle(color: Colors.blue, fontSize: 24.0,fontWeight: FontWeight.bold),)),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Row(children: <Widget>[
-            Container(child: Text("4.0",
-              style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Text("(100) \u00B7 2.0 mi",
-              style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-          ],)),
-        ),
-        Container(child: Text("nasr city \u00B7 abdalla elaraby street",
-          style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-        Row(
-          children: <Widget>[
-            RaisedButton(
-              child: Text('view profile'),
-              onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
-            ),
-            RaisedButton(
-              child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/seventh');},
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-
-  Widget myDetailsContainer4(btn1,btn2) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Text("Mohamed",
-            style: TextStyle(color: Colors.blue, fontSize: 24.0,fontWeight: FontWeight.bold),)),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Container(child: Row(children: <Widget>[
-            Container(child: Text("3.5", style: TextStyle(
-              color: Colors.black54, fontSize: 18.0,),)),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStar, color: Colors.amber, size: 15.0,),),
-            Container(child: Icon(
-              FontAwesomeIcons.solidStarHalf, color: Colors.amber,
-              size: 15.0,),),
-            Container(child: Text("(50) \u00B7 2.5 mi",
-              style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-          ],)),
-        ),
-        Container(child: Text("nasr city \u00B7 abdalla elaraby street",
-          style: TextStyle(color: Colors.black54, fontSize: 18.0,),)),
-        Row(
-          children: <Widget>[
-            RaisedButton(
-              child: Text('view profile'),
-              onPressed: (){ Navigator.pushNamed(btn1, '/sixth');},
-            ),
-            RaisedButton(
-              child: Text('Booking'),
-              onPressed: (){ Navigator.pushNamed(btn2, '/seventh');},
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-
+}
 
 class page1 extends StatefulWidget {
   @override
@@ -446,7 +313,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer1(this.context ,this.context),
+                          child: ContainerDetails('Ahmed',"nasr city \u00B7 abdalla elaraby street",4.8),
                         ),
                       ),
                       Container(
@@ -479,7 +346,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer2(this.context ,this.context),
+                          child: ContainerDetails('Mostafa',"nasr city \u00B7 abdalla elaraby street",4.3),
                         ),
                       ),
                       Container(
@@ -512,7 +379,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer3(this.context ,this.context),
+                          child: ContainerDetails('Amr',"nasr city \u00B7 abdalla elaraby street",4.0),
                         ),
                       ),
                       Container(
@@ -545,7 +412,7 @@ class _page1State extends State<page1> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer4(this.context ,this.context),
+                          child: ContainerDetails('Mohamed',"nasr city \u00B7 abdalla elaraby street",3.5),
                         ),
                       ),
                       Container(
@@ -601,7 +468,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer1(this.context ,this.context,),
+                          child: ContainerDetails('Ahmed',"nasr city \u00B7 abdalla elaraby street",4.8),
                         ),
                       ),
                       Container(
@@ -634,7 +501,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer2(this.context ,this.context),
+                          child: ContainerDetails('Mostafa',"nasr city \u00B7 abdalla elaraby street",4.3),
                         ),
                       ),
                       Container(
@@ -667,7 +534,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer3(this.context ,this.context),
+                          child: ContainerDetails('Amr',"nasr city \u00B7 abdalla elaraby street",4.0),
                         ),
                       ),
                       Container(
@@ -700,7 +567,7 @@ class _page2State extends State<page2> {
                       Container(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
-                          child: myDetailsContainer4(this.context ,this.context),
+                          child: ContainerDetails('Mohamed',"nasr city \u00B7 abdalla elaraby street",3.5),
                         ),
                       ),
                       Container(

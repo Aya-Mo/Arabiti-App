@@ -8,6 +8,7 @@ import 'userpage.dart';
 import 'viewprofile.dart';
 import 'SplashScreen.dart';
 import 'bookingForm.dart';
+import 'MyProfile.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/fifth' : (context) => Cards(),
         '/sixth' : (context) => ViewProfile(),
         '/seventh' : (context) => BookingForm(),
+        '/myprofile' : (context) => ProfilePage(),
       }
     );
   }
