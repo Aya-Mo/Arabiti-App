@@ -2,10 +2,9 @@
   "clints": [
     {
       "id": 1,
-      "first_name": "Findley"
-      "last_name": "Thuillier"
-      "email": "fthuillier0@wordpress.com"
-      "address": "1868 Merrick Court"
+      "name": "Findley Thuillier"
+      "email"= "fthuillier0@wordpress.com"
+      "address"= "1868 Merrick Court"
     },
      {
       "id": 2,
