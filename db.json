@@ -1,80 +1,74 @@
-  {
-  "clints": [
-    {
-      "id": 1,
-      "name": "Findley Thuillier"
-      "email": 'fthuillier0@wordpress.com'
-      "address": "1868 Merrick Court"
-    },
-     {
-      "id": 2,
-      "first_name": "Belicia"
-      "last_name": "Candelin"
-      "email": "bcandelin1@domainmarket.com"
-      "address": "957 Eggendart Center"
-    },
-    {
-      "id": 3,
-      "first_name": "Amby"
-      "last_name": "McJerrow"
-      "email": "amcjerrow2@newyorker.com"
-      "address": "50278 Holy Cross Alley"
-    },
-     {
-      "id": 4,
-      "first_name": "Daron"
-      "last_name": "Yeaman"
-      "email": "dyeaman3@homestead.com"
-      "address": "02140 Union Pass"
-    },
-     {
-      "id": 5,
-      "first_name": "Noel"
-      "last_name": "Thunnercliffe"
-      "email": "nthunnercliffe4@skype.com"
-      "address": "74387 Nobel Point"
-    },
-    {
-      "id": 6,
-      "first_name": "Libby"
-      "last_name": "McGaraghan"
-      "email": "lmcgaraghan5@sbwire.com"
-      "address": "28 Clyde Gallagher Lane"
-    },
-     {
-      "id": 7,
-      "first_name": "Fredelia"
-      "last_name": "Anthonsen"
-      "email": "fanthonsen6@addthis.com"
-      "address": "4 Calypso Circle"
-    },
-    {
-      "id": 8,
-      "first_name": "Tremaine"
-      "last_name": "Ferrolli"
-      "email": "tferrolli7@independent.co.uk"
-      "address": "61 Red Cloud Street"
-    },
-    {
-      "id": 9,
-      "first_name": "Arlinda"
-      "last_name": "Matus"
-      "email": "amatus8@shinystat.com"
-      "address": "80 Main Way"
-    },
-     {
-      "id": 10,
-      "first_name": "Johnnie"
-      "last_name": "Benne"
-      "email": "jbenne9@latimes.com"
-      "address": "378 Heath Circle"
-    }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+{
+   "clints":[
+      {
+         "id":1,
+         "first_name":"Findley",
+         "last_name":"Thuillier",
+         "email":"fthuillier0@wordpress.com",
+         "address":"1868 Merrick Court"
+      },
+      {
+         "id":2,
+         "first_name":"Belicia",
+         "last_name":"Candelin",
+         "email":"bcandelin1@domainmarket.com",
+         "address":"957 Eggendart Center"
+      },
+      {
+         "id":3,
+         "first_name":"Amby",
+         "last_name":"McJerrow",
+         "email":"amcjerrow2@newyorker.com",
+         "address":"50278 Holy Cross Alley"
+      },
+      {
+         "id":4,
+         "first_name":"Daron",
+         "last_name":"Yeaman",
+         "email":"dyeaman3@homestead.com",
+         "address":"02140 Union Pass"
+      },
+      {
+         "id":5,
+         "first_name":"Noel",
+         "last_name":"Thunnercliffe",
+         "email":"nthunnercliffe4@skype.com",
+         "address":"74387 Nobel Point"
+      },
+      {
+         "id":6,
+         "first_name":"Libby",
+         "last_name":"McGaraghan",
+         "email":"lmcgaraghan5@sbwire.com",
+         "address":"28 Clyde Gallagher Lane"
+      },
+      {
+         "id":7,
+         "first_name":"Fredelia",
+         "last_name":"Anthonsen",
+         "email":"fanthonsen6@addthis.com",
+         "address":"4 Calypso Circle"
+      },
+      {
+         "id":8,
+         "first_name":"Tremaine",
+         "last_name":"Ferrolli",
+         "email":"tferrolli7@independent.co.uk",
+         "address":"61 Red Cloud Street"
+      },
+      {
+         "id":9,
+         "first_name":"Arlinda",
+         "last_name":"Matus",
+         "email":"amatus8@shinystat.com",
+         "address":"80 Main Way"
+      },
+      {
+         "id":10,
+         "first_name":"Johnnie",
+         "last_name":"Benne",
+         "email":"jbenne9@latimes.com",
+         "address":"378 Heath Circle"
+      }
+   ]
 }
