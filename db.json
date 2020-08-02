@@ -2,6 +2,7 @@
    "clints":[
       {
          "id":1,
+         "photo":"https://randomuser.me/api/portraits/men/31.jpg",
          "first_name":"Findley",
          "last_name":"Thuillier",
          "email":"fthuillier0@wordpress.com",
