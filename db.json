@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "Findley Thuillier"
-      "email"= "fthuillier0@wordpress.com"
-      "address"= "1868 Merrick Court"
+      "email": 'fthuillier0@wordpress.com'
+      "address": "1868 Merrick Court"
     },
      {
       "id": 2,
