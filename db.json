@@ -1,5 +1,5 @@
 {
-   "clints":[
+   "workers":[
       {
          "id":1,
          "photo":"https://randomuser.me/api/portraits/men/31.jpg",
