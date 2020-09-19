@@ -1,82 +1,72 @@
 {
-   "workers":[
+   "User":[
       {
-         "id":1,
+         "index":1,
          "photo":"https://randomuser.me/api/portraits/men/31.jpg",
-         "first_name":"Findley",
-         "last_name":"Thuillier",
+         "name":"Findley Thuillier",
          "email":"fthuillier0@wordpress.com",
          "address":"1868 Merrick Court"
       },
       {
-         "id":2,
+         "index":2,
          "photo":"https://randomuser.me/api/portraits/men/72.jpg",
-         "first_name":"Belicia",
-         "last_name":"Candelin",
+         "name":"Belicia Candelin",
          "email":"bcandelin1@domainmarket.com",
          "address":"957 Eggendart Center"
       },
       {
-         "id":3,
+         "index":3,
          "photo":"https://randomuser.me/api/portraits/men/51.jpg",
-         "first_name":"Amby",
-         "last_name":"McJerrow",
+         "name":"Amby McJerrow",
          "email":"amcjerrow2@newyorker.com",
          "address":"50278 Holy Cross Alley"
       },
       {
-         "id":4,
+         "index":4,
          "photo":"https://randomuser.me/api/portraits/men/44.jpg",
-         "first_name":"Daron",
-         "last_name":"Yeaman",
+         "name":"Daron Yeaman",
          "email":"dyeaman3@homestead.com",
          "address":"02140 Union Pass"
       },
       {
-         "id":5,
+         "index":5,
          "photo":"https://randomuser.me/api/portraits/men/14.jpg",
-         "first_name":"Noel",
-         "last_name":"Thunnercliffe",
+         "name":"Noel Thunnercliffe",
          "email":"nthunnercliffe4@skype.com",
          "address":"74387 Nobel Point"
       },
       {
-         "id":6,
+         "index":6,
          "photo":"https://randomuser.me/api/portraits/men/32.jpg",
-         "first_name":"Libby",
-         "last_name":"McGaraghan",
+         "name":"Libby McGaraghan",
          "email":"lmcgaraghan5@sbwire.com",
          "address":"28 Clyde Gallagher Lane"
       },
       {
-         "id":7,
+         "index":7,
          "photo":"https://randomuser.me/api/portraits/men/76.jpg",
-         "first_name":"Fredelia",
-         "last_name":"Anthonsen",
+         "name":"Fredelia Anthonsen",
          "email":"fanthonsen6@addthis.com",
          "address":"4 Calypso Circle"
       },
       {
-         "id":8,
+         "index":8,
          "photo":"https://randomuser.me/api/portraits/men/16.jpg",
-         "first_name":"Tremaine",
-         "last_name":"Ferrolli",
+         "name":"Tremaine Ferrolli",
          "email":"tferrolli7@independent.co.uk",
          "address":"61 Red Cloud Street"
       },
       {
-         "id":9,
+         "index":9,
          "photo":"https://randomuser.me/api/portraits/men/20.jpg",
-         "first_name":"Arlinda",
-         "last_name":"Matus",
+         "name":"Arlinda Matus",
          "email":"amatus8@shinystat.com",
          "address":"80 Main Way"
       },
       {
-         "id":10,
+         "index":10,
          "photo":"https://randomuser.me/api/portraits/men/87.jpg",
-         "first_name":"Johnnie",
-         "last_name":"Benne",
+         "name":"Johnnie Benne",
          "email":"jbenne9@latimes.com",
          "address":"378 Heath Circle"
       }
